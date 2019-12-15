@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/parent_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:onClick="parentLayout"
+     >
+
+        <TextView
+            android:id="@+id/nyt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_8"
+            android:paddingRight="@dimen/margin_10"
+            android:text="Supporters of the Democratic candidate jon Ossoff after his Democratic candidate jon Ossoff after his"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/dark_gray"
+            android:layout_toLeftOf="@+id/time"
+            android:layout_toRightOf="@+id/nyt_logo"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:gravity="start"
+          />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/byline"
+            android:layout_alignBottom="@+id/nyt_logo"
+            android:layout_toLeftOf="@+id/direction_arrow"
+            android:paddingEnd="@dimen/margin_4"
+            android:text="2017-06-23"
+            android:drawableStart="@drawable/ic_date_range_black_24dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/dark_gray"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/direction_arrow"
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="@dimen/margin_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/next" />
+
+        <ImageView
+            android:id="@+id/nyt_logo"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60"
+            android:layout_below="@+id/nyt_title"
+            android:layout_marginTop="-32dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/byline"
+            android:layout_width="@dimen/margin_250"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nyt_title"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toRightOf="@+id/nyt_logo"
+            android:paddingLeft="@dimen/margin_4"
+            android:paddingRight="@dimen/margin_60"
+            android:text="By MICHELLE GOLDBERG and STAURT A THOMSEN"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/dark_gray"
+      />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
