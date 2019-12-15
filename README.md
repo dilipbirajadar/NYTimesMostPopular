@@ -34,3 +34,6 @@ This app leverages two third-party libraries:
 retrofit2 - For network requests
 recyclerview - To diplsy data in list format. 
 
+# For Test App
+Clone or Download from this repo.
+Open downlaoded project in android studio and just run.
